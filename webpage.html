@@ -78,12 +78,7 @@
     <p>This is a static web page with basic HTML and CSS styling. </p>
 
     <h3>Features:</h3>
-    <ul>
-        <li>Header and Footer</li>
-        <li>Navigation Bar</li>
-        <li>Main Content Area</li>
-        <li>Simple, Clean Design</li>
-    </ul>
+   
 
     </main>
 
@@ -100,10 +95,18 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['2004', '2005', '2006', '2007', '2008', '2009'],
       datasets: [{
-        label: '# of Votes',
+        label: '# of users in million',
         data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.7)',   // Red
+          'rgba(54, 162, 235, 0.7)',   // Blue
+          'rgba(255, 206, 86, 0.7)',   // Yellow
+          'rgba(75, 192, 192, 0.7)',   // Teal
+          'rgba(153, 102, 255, 0.7)',  // Purple
+          'rgba(255, 159, 64, 0.7)'    // Orange
+        ],
         borderWidth: 1
       }]
     },
@@ -119,25 +122,7 @@
 <script>
   const ctx = document.getElementById('myChart');
 
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
+ 
 
 
 
